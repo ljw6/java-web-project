@@ -10,8 +10,8 @@ public class Test1Application {
 
     public static void main(String[] args) {
         ApplicationContext context =  SpringApplication.run(Test1Application.class, args);
-        Login_aproch login = context.getBean(mobile.class);
-        String s = login.Login("name", "mima");
+        loggin_bs loggin_bss = context.getBean(loggin_bs.class);
+        String s = loggin_bss.Loggin_pro("name", "mima");
         System.out.println(s);
     }
 
