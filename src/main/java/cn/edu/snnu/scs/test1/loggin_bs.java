@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Scope("prototype")
 public class loggin_bs {
-    @Qualifier(value = "pc")
+    @Qualifier(value = "mob")//区别由component标识的接口实现类
     @Autowired
     Login_aproch log_ap;
     public void setLog_ap(Login_aproch log_ap) {

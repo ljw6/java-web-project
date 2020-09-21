@@ -10,9 +10,12 @@ public class Test1Application {
 
     public static void main(String[] args) {
         ApplicationContext context =  SpringApplication.run(Test1Application.class, args);
-        loggin_bs loggin_bss = context.getBean(loggin_bs.class);
-        String s = loggin_bss.Loggin_pro("name", "mima");
-        System.out.println(s);
+        User_Dao us_da = context.getBean(User_Dao.class);
+        System.out.println(us_da);
+        System.out.println(us_da.getJdbc());
+        User_Dao us_da2 = context.getBean(User_Dao.class);
+        System.out.println(us_da2);
+        System.out.println(us_da2.getJdbc());
     }
 
 }
