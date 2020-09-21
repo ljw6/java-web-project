@@ -1,4 +1,4 @@
-package cn.edu.snnu.scs.test1;
+package cn.edu.snnu.scs.demo;
 
 
 import org.springframework.context.annotation.Scope;
@@ -19,4 +19,5 @@ public class jdbc_connect {
         System.out.println("jdbc 开始工作");
         return "process done";
     }
+
 }
